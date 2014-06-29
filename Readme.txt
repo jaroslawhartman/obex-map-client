@@ -3,6 +3,18 @@ obex_ftp_client.py program which allows interactively communicating
 with a MAP device.  I have fixed several bugs within the lightblue
 OS X source code, so you will have to build that as well.
 
+0. Updates and hints to Mac OS X 10.9 according to http://www.thebrokendesk.com/post/installing-lightblue-on-osx-109/
+
+All implemented; in case of 
+
+> ImportError: No module named Foundation
+
+Re-install pyobjc seemed to fix this for me
+
+pip uninstall pyobjc
+pip instal pyobjc
+
+
 1. Install the lightblue python module as well as the Mac OS
    X-specific LightAquaBlue framework:
 
